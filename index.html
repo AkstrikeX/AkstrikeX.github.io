@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+    <html lang="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>trabalho telecken</title>
+    <style>
+        figure {
+            width: 300px;
+        }
+        figure figcaption {
+            text-align: center;
+        }
+        img.img2 {
+            width: 350px;
+            height: 300px;
+        }
+        img.img1 {
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        fieldset {
+            width: 400px;
+            margin: 0.4px;
+            border: 1px solid black;
+        }
+        input, select {
+            margin: 10px;
+        }
+        video {
+            width: 300px;
+            height: 300px;
+        }
+        iframe {
+            border: 0px;
+        }
+
+    </style>
+    <body>
+        <header>
+            <h1>Spark</h1>
+            <p><i>Tensão de 13800v</i>,<b> PERIGO</b></p>
+        </header>
+        <nav>
+            <ul>
+                <li>Menu</li>
+                <li>Principal</li>
+                <li>Produtos</li>
+                <li>Serviços</li>
+                <li>Sobre</li>
+            </ul>
+        </nav>
+        <main>
+            <ol>
+                <li>Frutas
+                    <ul>
+                        <li>Banana</li>
+                        <li>Maça</li>
+                        <li>Abacate</li>
+                    </ul>
+                </li>
+                <li>Legumes
+                    <ul>
+                        <li>Cebola</li>
+                        <li>Pimentão</li>
+                    </ul>
+                </li>
+                <li>Cereais
+                    <ul>
+                        <li>Arroz</li>
+                        <li>feijão</li>
+                    </ul>
+                </li>
+            </ol>
+            <table>
+                <caption><b>Lucro por mês</b></caption>   
+                <thead>
+                    <tr>
+                        <th><b>Mês</b></th>
+                        <th colspan="2"><b>Frutas</b></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th><b>Banana</b></th>
+                        <th><b>Maça</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Janeiro</td>
+                        <td>100</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Fevereiro</td>
+                        <td>120</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Março</td>
+                        <td>120</td>
+                        <td>150</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>340</td>
+                        <td>300</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <figure>
+                <img class="img1" src="img/Produção_De_Arte.jpeg">
+                <figcaption>
+                    Take a moment to rest
+                </figcaption>
+            </figure>
+            <br>
+            Link:
+            <br>
+            <a href="https://ifrs.edu.br/riogrande/"><img class="img2" src="img/perigo.webp" alt="link para IFRS"></a>
+            <br>
+        </main>
+        <form action="recebe.php" method="post"></form>
+        <fieldset>
+            <legend> Formulário:</legend>
+            Nome: <input type="text" name="nome" placeholder="Douglas"><br>
+            Senha: <input type="password" name="senha" placeholder="Senha"><br>
+            Email: <input type="email" name="email" placeholder="email@email.com"><br>
+            Time: <input type="checkbox" name="time" value="Gremio">Gremio 
+            <input type="checkbox" name="time" value="Inter">Inter<br>
+            Linguagem: <input type="radio" name="linguagem" id="html" value="HTML"><label for="html">HTML</label>
+            <input type="radio" name="linguagem" id="css" value="CSS"><label for="css">CSS</label>
+            <input type="radio" name="linguagem" id="javascript" value="Javascript"><label for="javascript">Javascript</label><br>
+            Nacionalidade: <select name="nacionalidade">
+                <option>Brasil</option>
+                <option>Argentina</option>
+            </select><br>
+            <input type="submit">
+        </fieldset>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BXo3DrXHY8w?si=Mlt3GXmxKcBeAH4W" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <br>
+        <footer>
+           Localizada na Rua Dr. Napoleão Laureano, 517
+        </footer>
+    </body>
+</html>
