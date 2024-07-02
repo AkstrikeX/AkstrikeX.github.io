@@ -1,0 +1,78 @@
+body {
+    background-color: rgba(27, 27, 27, 0.79);
+    color: white;
+}
+
+figure {
+    width: 300px;
+}
+figure figcaption {
+    text-align: center;
+}
+img.img2 {
+    width: 350px;
+    height: 300px;
+}
+img.img1 {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+}
+fieldset {
+    min-width: 400px;
+    margin: 0.4px;
+    border: 1px solid black;
+}
+input, select {
+    margin: 10px;
+}
+video {
+    width: 300px;
+    height: 300px;
+}
+iframe {
+    border: 0px;
+}
+nav {
+    display: flex;
+    height: 54px;
+    background-color: #6f6d01;
+    min-width: 360px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+nav li {
+    display: inline-flex;
+    margin: 0 30px;
+    align-self: center;
+}
+
+nav a {
+        font-size: 16px;
+    color: black;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+a:visited {
+    color: black;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a{
+    display: block;
+    padding: 15px 5px;
+}
