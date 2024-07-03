@@ -1,7 +1,7 @@
 body {
     background-color: #066887;
     margin: 0;
-    min-width: 360px;
+    min-width: 620px;
     font-family: Arial, sans-serif;
 }
 
@@ -15,7 +15,7 @@ nav {
     display: flex;
     height: 54px;
     background-color: rgba(124, 204, 249, 0.84);
-    min-width: 360px;
+    min-width: 620px;
     justify-content: space-around;
 }
 
@@ -54,7 +54,7 @@ main {
     background-size: 100% 100%;
     background-position: center;
     background-color: #06a5d5d3;
-    min-width: 360px;
+    min-width: 620px;
 }
 
 header {
