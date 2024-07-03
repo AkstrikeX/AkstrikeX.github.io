@@ -1,0 +1,202 @@
+body {
+    background-color: #066887;
+    margin: 0;
+    min-width: 360px;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-decoration-line: solid 1px #1360D3;
+}
+
+nav {
+    display: flex;
+    height: 54px;
+    background-color: rgba(124, 204, 249, 0.84);
+    min-width: 360px;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+nav li {
+    display: inline;
+    margin: 0 30px;
+    align-self: center;
+}
+
+nav a {
+        font-size: 16px;
+    color: black;
+}
+
+nav a:hover {
+    color: #0004ffd7;
+}
+
+
+.imagemFundo {
+    background-image: url('../img/background.jpg');
+    height: 100%;
+}
+.imagemFundo2 {
+    background-image: url('../img/background2.jpg');
+    height: 100%;
+}
+main {
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: #06a5d5d3;
+    min-width: 360px;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+header h1 {
+    margin-left: 30px;
+    align-self: center;
+    flex-grow: 1;
+}
+main h2 {
+    color: #037a9f;
+    text-align: center;
+    margin-top: 30px;
+}
+
+main h3 {
+    color: #05aadc;
+    text-align: center;
+}
+p {
+    text-align: justify;
+    margin: 30px 60px 30px 60px;
+    color: #ffffff;
+    text-indent: 1.5em;
+}
+main figure img{
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+footer div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.divBuscaRapida {
+    display: flex;
+    align-self: center;
+    background-color: #D9D9D9;
+    padding: 0px;
+    border-radius: 5px;
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+.inputBuscaRapida {
+    flex: 2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    border-color: #ffffff;
+}
+
+.botaoBuscaRapida {
+    padding: 10px 10px;
+    background-color: #D9D9D9;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+img.imgBuscaRapida{
+    width: 20px;
+    height: 20px;
+}
+.divLogin {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    text-align: center;
+    align-self: center;
+    margin-left: 5px;
+}
+.botaoLogin {
+    background-color: rgba(124, 204, 249, 0.84);
+    align-self: center;
+    color: #066887;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h1 {
+    color: #333;
+    text-align: center;
+}
+.primeiraImg{
+    height:200px;
+    width: 200px;
+    justify-content: center;
+    flex-grow: 1;
+    box-shadow: 2px 2px 5px#ffffff;
+    
+}
+.main-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+figure {
+    margin: 20px;
+    text-align: center;
+}
+figure figcaption{
+    padding-bottom: 20px;
+    padding-top: 5px;
+    flex-grow: 1;
+    color: #ffffff;
+}
+.flex-child-mods{
+    justify-content: center;
+    max-height: fit-content;
+}
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+img.logotipo{
+    width: 60px;
+    height: 60px;
+}
+
