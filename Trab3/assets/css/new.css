@@ -1,13 +1,40 @@
+/* Global */
+
 :root {
     --accent-color: #35d0ffde;
-    --background-color: #066887;
+    --background-color: #056987;
 }
 
 :root{
     --nav-hover-color: #35d0ffde;
     --nav-dropdown-hover-color: #35d0ffde;
 }
+/* End of Global */
 
+/* Header */
 .index-page.scrolled .header {
     --nav-hover-color: #35d0ffde;
-  }
+}
+/* End of Header */
+
+/* Table */
+.table-responsive {
+    padding: 15px;
+}
+.table {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+.table td {
+    background-color: rgba(0, 0, 0, 0.466);
+    color: #ffffff;
+}
+.table th {
+    background-color: rgba(137,175,233)
+    
+}
+.table caption {
+    color: #ffffff;
+}
+/* End of Table */
