@@ -1,0 +1,13 @@
+:root {
+    --accent-color: #35d0ffde;
+    --background-color: #066887;
+}
+
+:root{
+    --nav-hover-color: #35d0ffde;
+    --nav-dropdown-hover-color: #35d0ffde;
+}
+
+.index-page.scrolled .header {
+    --nav-hover-color: #35d0ffde;
+  }
