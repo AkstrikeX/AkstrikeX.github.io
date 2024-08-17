@@ -38,3 +38,9 @@
     color: #ffffff;
 }
 /* End of Table */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+    font-display: swap; /* Fallback to system font while the custom font loads */
+}
