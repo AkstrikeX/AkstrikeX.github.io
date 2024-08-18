@@ -36,17 +36,30 @@
     
 }
 .table caption {
-    color: #ffffff;
+    color: #000000;
 }
 /* End of Table */
 
+/* Button Color */
+
+.hero .sign-up-form input[type=submit] {
+    color: #000000;
+}
+
+.header .btn-getstarted {
+    color: #000000;
+}
+/* End of Button Color */
+
+/* Font Load */
 @font-face {
     font-family: 'Open Sans';
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     font-display: swap; /* Fallback to system font while the custom font loads */
 }
+/* End of Font Load */
 
-/* Keyframes for the ease-in animation */
+/* Animation */
 @keyframes easeInAnimation {
     0% {
       opacity: 0;
@@ -57,21 +70,20 @@
       transform: scale(1);
     }
 }
-  
-  /* Apply animation to the image */
-  .image-ease-in:hover {
+.image-ease-in:hover {
     animation: easeInAnimation 1s ease-in-out forwards;
-    /* Optional: Set initial styles for the image */
-    opacity: 0; /* Start with the image hidden */
-    transform: scale(0.9); /* Optional: Start with the image slightly scaled down */
-  }
+    
+    opacity: 0;
+    transform: scale(0.9);
+}
 
-  .animation {
+.animation {
     width: 50%;
     margin: 0 auto;
     text-align: center;
-  }
+}
 
 .animation img {
     max-width: 100%;
 }
+/* End of Animation */
