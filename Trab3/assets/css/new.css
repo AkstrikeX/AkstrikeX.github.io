@@ -7,14 +7,27 @@
 }
 
 :root{
-    --nav-hover-color: #35d0ffde;
-    --nav-dropdown-hover-color: #35d0ffde;
+    --nav-hover-color: #045b75;
+    --nav-dropdown-hover-color: #045b75;
 }
 /* End of Global */
 
 /* Header */
+.index-page .header {
+    --background-color: rgba(255, 255, 255, .25);
+    --heading-color: #ffffff;
+    --nav-color: rgba(255, 255, 255, 0.5);
+  }
 .index-page.scrolled .header {
-    --nav-hover-color: #35d0ffde;
+    --nav-hover-color: #045b75;
+}
+
+.header .logo h1 {
+    color: #000000;
+}
+
+.navmenu li:hover>a, .navmenu .active, .navmenu .active:focus {
+    color: #3b0056;
 }
 /* End of Header */
 
@@ -87,8 +100,11 @@
     max-width: 100%;
 }
 /* End of Animation */
-/* Constrats */
+/* Constrasts */
 a {
     color: #045b75;
 }
 
+.navmenu a, .navmenu a:focus {
+    color:#000000;
+}
