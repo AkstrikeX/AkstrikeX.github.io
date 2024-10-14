@@ -1,0 +1,79 @@
+:root {
+    --var-cartao-width: 500px;
+    --var-cartao-height: 300px;
+    --var-cartao-border: 1px solid black;
+    --var-cartao-color: #FFC300;
+    --var-cartao-radius: 0px;
+}
+
+.cartao {
+    width: var(--var-cartao-width);
+    height: var(--var-cartao-height);
+    border: var(--var-cartao-border);
+    background-color: var(--var-cartao-color);
+    margin: 10px;
+    border-radius: var(--var-cartao-radius);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    overflow: hidden;
+}
+
+form.comandos {
+    display: flex;
+    width: 300px;
+    height: fit-content;
+    justify-content: space-around;
+    flex-direction: column; 
+    border: 1px solid;
+    align-content: center;
+    padding: 5px;
+}
+
+input select {
+    flex: 1;
+    justify-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto;
+
+}
+select {
+    flex: 1;
+    justify-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto
+}
+
+label {
+    flex: 1;
+    justify-self: center;
+    margin: 5px;
+    align-self: center;
+}
+
+input#color-button {
+    width: auto;
+}
+
+.down_layer {
+    display: flex;
+    width: auto; /* Full width */
+    height: auto; /* Adjust as needed */
+    justify-content: space-between; /* Space out the images */
+    overflow: hidden; /* Prevent overflow */
+    padding: 20px;
+}
+
+.down_layer img {
+    flex: 1; /* Allow images to grow */
+    width: 50%; /* Each image takes up half of the container */
+    height: 100%; /* Fill the height of the parent */
+    object-fit: fill; / /* Prevent images from exceeding their container */
+}
+
+p {
+    margin: 10px;
+}

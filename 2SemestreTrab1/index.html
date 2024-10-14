@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Aniversário</title>
+</head>
+<body>
+    <div>
+      <form class="comandos">
+        <label for="input-text">Nome</label>
+        <input type="text" placeholder="joao dos santos" id="input-text" oninput="updateText()">
+
+        <label for="input-happy">Mensagem</label>
+        <input type="text" placeholder="feliz aniversário" id="input-happy" oninput="updateTextMsg()">
+
+        <label for="color-button">Cor</label>
+        <input type="color" name="botao_cor" id="color-button" value="#FFC300" onchange="updateColor()">
+
+        <label for="border-select">Borda</label>
+        <select name="bordas" id="border-select" onchange="updateBorder()">
+          <option value="1px">1px</option>
+          <option value="2px">2px</option>
+          <option value="3px">3px</option>
+        </select>
+        
+        <label for="size-select">Tamanho</label>
+        <select name="tamanho" id="size-select" onchange="updateSize(), updateText(), updateTextMsg()">
+            <option value="500x300">500x300</option>
+            <option value="600x400">600x400</option>
+            <option value="700x500">700x500</option>
+        </select>
+        
+        <label for="input-range">Canto</label>
+        <input type="range" name="range" id="input-range" value="0" oninput="updateRadius()">
+      </form>
+    </div>
+    <div class="cartao">
+      <p id="text-area">joao dos santos</p>
+      <p id="happy">feliz aniversário!</p>
+      <div class="down_layer">
+          <img src="img/pngcake.png" alt="cone de festa">  
+          <img src="img/party-popper.png" alt="cone de festa">  
+      </div>
+   </div>
+</body>
+</html>
