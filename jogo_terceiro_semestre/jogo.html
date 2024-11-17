@@ -13,7 +13,11 @@
 <body>
     <div class="main">
         <div class="screen" id="tela">
-            <h3>Score:</h3> <h3 id="pontuacao">0</h3>
+            <div>
+            <h3 id="recorde">Recorde: 0</h3>
+            <h3 id="pontuacao">Score: 0</h3>
+        </div>
+        <h1 id="gameover_tag" class="gameover_tag">GAME OVER</h1>
             <script>bullet = new Bullet()</script>
             <script>player = new Player()</script>
     
@@ -37,6 +41,8 @@
     </div>
 </body>
 <script>player.setPosition()</script>
+
+
 <script src='js/jogo.js'></script>
 
 </html>

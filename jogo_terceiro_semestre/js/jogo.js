@@ -40,9 +40,20 @@ async function startGame() {
         await sleep(200)
         bullet.create()
         pontuacao++
-        document.getElementById("pontuacao").innerHTML = pontuacao
+        document.getElementById("pontuacao").innerHTML = "Score:" + pontuacao
     }
 
+    bullets = document.querySelectorAll('.bullet')
+    bullets.forEach(element => {
+        element.remove()
+    });
+
+    if (pontuacao > localStorage.getItem("recorde")) {
+        localStorage.setItem("recorde", pontuacao)
+    }
+    document.getElementById("recorde").innerHTML = "Recorde: " + localStorage.getItem("recorde")
+    document.getElementById("gameover_tag").style.display = "block"
+    document.getElementById("player").style.display = "none"
 }
 
 function reiniciar() {
@@ -53,6 +64,8 @@ function reiniciar() {
     bullets.forEach(element => {
         element.remove()
     });
+    document.getElementById("gameover_tag").style.display = "none"
+    document.getElementById("player").style.display = "block"
 }
 
 function sleep(ms) {

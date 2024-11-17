@@ -47,3 +47,10 @@
     align-self: center;
 }
     
+h1.gameover_tag {
+    align-self: center;
+    justify-self: center;
+    font-size: 6em;
+    flex: 1;
+    display: none;
+}
