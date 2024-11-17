@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="portuguese">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
     <title>Jogo</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/jogo.css'>
@@ -27,11 +28,11 @@
         <div class="botoes" id="botoes">
             <input class="button" type="button" value="Iniciar" onclick="startGame()">
             <input class="button" type="button" value="Reiniciar" onclick="reiniciar()">
-            <input class="button" type="button" value="" onclick="">
+            <input class="button" type="button" value="." onclick="">
             <br>
-            <input class="button" type="button" value="" onclick="">
+            <input class="button" type="button" value="." onclick="">
             <input class="button" type="button" value="cima" onclick="player.move('cima')">
-            <input class="button" type="button" value="" onclick="">
+            <input class="button" type="button" value="." onclick="">
             <br>
             <input class="button" type="button" value="esquerda" onclick="player.move('esquerda')">
             <input class="button" type="button" value="baixo" onclick="player.move('baixo')">
@@ -40,9 +41,8 @@
         </div>
     </div>
 </body>
-<script>player.setPosition()</script>
+    <script>player.setPosition()</script>
 
-
-<script src='js/jogo.js'></script>
+    <script src='js/jogo.js'></script>
 
 </html>

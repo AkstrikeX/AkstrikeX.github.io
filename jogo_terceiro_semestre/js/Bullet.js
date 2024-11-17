@@ -95,7 +95,7 @@ class Bullet {
         let player_height = parseInt(getComputedStyle(player).height) 
 
 
-        if ((left >= player_left && left <= player_left+player_width) && (top >= player_top && top <= player_top + player_height) || (right >= player_left && right <= player_left+player_width) && (bottom >= player_top && bottom <= player_top + player_height)){
+        if (((left >= player_left && left <= player_left+player_width) && (top >= player_top && top <= player_top + player_height)) || ( (right >= player_left && right <= player_left+player_width) && (bottom <= player_top && bottom >= player_top + player_height))){
             return gameOver = true
         }
     }
