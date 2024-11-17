@@ -1,6 +1,6 @@
 class Bullet {
     count = 1;
-    screen = document.getElementById('screen')
+    screen = document.getElementById('tela')
 
     create() {
         var bala = document.createElement("div")
@@ -30,6 +30,7 @@ class Bullet {
         if (side == 1) { /*esquerda*/
             let starting_point = getRandomInt(bullet_height,screen_height-bullet_height)
             bala.style.top = `${starting_point}px`
+            bala.style.left = `${bullet_height}px`
 
             while (left < screen_width) {
                 await sleep(speed)
@@ -89,15 +90,13 @@ class Bullet {
         let bullet_height = parseInt(getComputedStyle(bala).height)
 
         let player_top = parseInt(getComputedStyle(player).top)
-        let player_left = parseInt(getComputedStyle(player).left)                
-        let player_right = parseInt(getComputedStyle(player).right)                
-        let player_bottom = parseInt(getComputedStyle(player).bottom)                
+        let player_left = parseInt(getComputedStyle(player).left)                                
         let player_width = parseInt(getComputedStyle(player).width)                
         let player_height = parseInt(getComputedStyle(player).height) 
 
 
-        if ((left >= player_left && left <= player_left+player_width) && (top >= player_top && top <= player_top + player_height)){
-            console.log("colisão")
+        if ((left >= player_left && left <= player_left+player_width) && (top >= player_top && top <= player_top + player_height) || (right >= player_left && right <= player_left+player_width) && (bottom >= player_top && bottom <= player_top + player_height)){
+            return gameOver = true
         }
     }
 

@@ -19,12 +19,10 @@
 
 .player {
     position: absolute;
-    top:5vw;
-    left:5vw;
     width: 4vw;
     height: 4vw;
     background-color: rgb(167, 2, 2);
-    border-radius: 50%;
+
 }
 
 .bullet {
@@ -41,7 +39,6 @@
     width: 8vw;
     height: 8vw;
     flex: 1;
-
     
 }
 

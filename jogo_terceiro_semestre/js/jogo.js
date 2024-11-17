@@ -1,13 +1,11 @@
-//ativa Botões do painel de controle
-// const input = document.querySelector("input")
+gameOver = false
+
 document.addEventListener("keydown",()=>{
     if (event.key === "w") {
         player.move('cima')
-        console.log("w")
     }
     if (event.key === "a") {
         player.move('esquerda')
-        console.log("w")
 
     }
     if (event.key === "s") {
@@ -32,17 +30,25 @@ document.addEventListener("keydown",()=>{
 });
 
 document.addEventListener("keyup",()=>{
-    player.acceleration = 3
+    player.acceleration = 10
 });
-// input.addEventListener("click",()=>{ move('acima')});
-// input.addEventListener("click", ()=>{altura(5)});
-// input.addEventListener("click", ()=>{altura(-5)});
-// input.addEventListener("click", ()=>{largura(5)});
-// input.addEventListener("click", ()=>{largura(-5)});
-// input.addEventListener("click", ()=>{cores()});
 
-function startGame() {
-    
+async function startGame() {
+    player.setPosition()
+    while(!gameOver){
+        await sleep(200)
+        bullet.create()
+    }
+}
+
+function reiniciar() {
+    gameOver = false
+    player.setPosition()
+    startGame()
+    bullets = document.querySelectorAll('.bullet')
+    bullets.forEach(element => {
+        element.remove()
+    });
 }
 
 function sleep(ms) {

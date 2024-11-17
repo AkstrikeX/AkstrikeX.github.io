@@ -1,21 +1,21 @@
 class Player {
     vidas = 3
-    screen = document.getElementById('screen')
     acceleration = 10
     speed = 9
 
     constructor() {
-        let screen_height = parseInt(getComputedStyle(this.screen).height)
-        let screen_width = parseInt(getComputedStyle(this.screen).width)
-
+        let screen = document.getElementById("tela")
+        let screen_height = parseInt(getComputedStyle(screen).height)
+        let screen_width = parseInt(getComputedStyle(screen).width)
+        console.log(screen_height)
+        console.log(screen_width)
         var player = document.createElement("div")
         player.setAttribute("id", "player")
         player.classList.add("player")
-    
-        this.screen.appendChild(player)
-
-        player.style.left = `${Math.floor(screen_width/2)}px`
+        player.style.left = `${Math.floor(screen_width/4)}px`
         player.style.top = `${Math.floor(screen_height/2)}px`
+
+        screen.appendChild(player)
 
     }
 
@@ -62,5 +62,17 @@ class Player {
             }
         }
         this.acceleration--
+    }
+
+    setPosition() {
+        let screen_height = parseInt(getComputedStyle(document.getElementById("tela")).height)
+        let screen_width = parseInt(getComputedStyle(document.getElementById("tela")).width)
+        let player = document.getElementById("player")
+
+        console.log(screen_height)
+        console.log(screen_width)
+
+        player.style.left = `${Math.floor(screen_width/2)}px`
+        player.style.top = `${Math.floor(screen_height/2)}px`
     }
 }
