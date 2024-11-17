@@ -1,0 +1,52 @@
+.main {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+.screen {
+    min-width: 60vw;
+    min-height: 45vw;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    flex: 1;
+}
+
+.player {
+    position: absolute;
+    top:5vw;
+    left:5vw;
+    width: 4vw;
+    height: 4vw;
+    background-color: rgb(167, 2, 2);
+    border-radius: 50%;
+}
+
+.bullet {
+    position: absolute;
+    top:5vw;
+    left:5vw;
+    width: 2vw;
+    height: 2vw;
+    background-color: black;
+    border-radius: 30%;
+}
+
+.button {
+    width: 8vw;
+    height: 8vw;
+    flex: 1;
+
+    
+}
+
+.botoes {
+    flex: 1;
+    align-self: center;
+}
+    

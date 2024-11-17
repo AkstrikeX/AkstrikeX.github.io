@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jogo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jogo.css'>
+    <script src='js/Bullet.js'></script>
+    <script src='js/Player.js'></script>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="screen" id="screen">
+            <script>bullet = new Bullet(10,10)</script>
+            <script>player = new Player(10,10)</script>
+
+        </div>
+        <div class="botoes" id="botoes">
+            <input type="button" value="add" onclick="bullet.create()">
+            <input type="button" value="add" onclick="bullet.create()">
+            <br>
+            <input class="button" type="button" value="" onclick="">
+            <input class="button" type="button" value="cima" onclick="player.move('cima')">
+            <input class="button" type="button" value="" onclick="">
+            <br>
+            <input class="button" type="button" value="esquerda" onclick="player.move('esquerda')">
+            <input class="button" type="button" value="baixo" onclick="player.move('baixo')">
+            <input class="button" type="button" value="direita" onclick="player.move('direita')">
+
+        </div>
+    </div>
+</body>
+<script src='js/jogo.js'></script>
+
+</html>
