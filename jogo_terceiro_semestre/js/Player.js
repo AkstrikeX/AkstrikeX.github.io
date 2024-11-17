@@ -2,11 +2,12 @@ class Player {
     vidas = 3
     acceleration = 10
     speed = 9
+    screen = document.getElementById("tela")
+
 
     constructor() {
-        let screen = document.getElementById("tela")
-        let screen_height = parseInt(getComputedStyle(screen).height)
-        let screen_width = parseInt(getComputedStyle(screen).width)
+        let screen_height = parseInt(getComputedStyle(this.screen).height)
+        let screen_width = parseInt(getComputedStyle(this.screen).width)
         console.log(screen_height)
         console.log(screen_width)
         var player = document.createElement("div")
@@ -15,7 +16,7 @@ class Player {
         player.style.left = `${Math.floor(screen_width/4)}px`
         player.style.top = `${Math.floor(screen_height/2)}px`
 
-        screen.appendChild(player)
+        this.screen.appendChild(player)
 
     }
 

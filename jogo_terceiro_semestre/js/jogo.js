@@ -35,10 +35,14 @@ document.addEventListener("keyup",()=>{
 
 async function startGame() {
     player.setPosition()
+    let pontuacao = 0
     while(!gameOver){
         await sleep(200)
         bullet.create()
+        pontuacao++
+        document.getElementById("pontuacao").innerHTML = pontuacao
     }
+
 }
 
 function reiniciar() {
