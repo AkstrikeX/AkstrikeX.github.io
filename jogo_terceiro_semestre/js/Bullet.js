@@ -82,18 +82,6 @@ class Bullet {
     collision(bala) {
         var player = document.getElementById("player")
 
-        let top = parseInt(getComputedStyle(bala).top)
-        let left = parseInt(getComputedStyle(bala).left)                
-        let right = parseInt(getComputedStyle(bala).right)                
-        let bottom = parseInt(getComputedStyle(bala).bottom)                
-        let bullet_width = parseInt(getComputedStyle(bala).width)                
-        let bullet_height = parseInt(getComputedStyle(bala).height)
-
-        let player_top = parseInt(getComputedStyle(player).top)
-        let player_left = parseInt(getComputedStyle(player).left)                                
-        let player_width = parseInt(getComputedStyle(player).width)                
-        let player_height = parseInt(getComputedStyle(player).height) 
-
         let rect_bala = bala.getBoundingClientRect();
         let rect_player = player.getBoundingClientRect();
 
