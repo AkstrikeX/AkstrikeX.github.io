@@ -6,6 +6,16 @@
     .main {
         flex-direction: column;
     }
+
+    .screen {
+        min-height: 60vw;
+
+    }
+
+    .button {
+        min-width: 12vw;
+        min-height: 12vw;
+    }
 }
 
 .screen {
@@ -15,6 +25,7 @@
     color: black;
     display: flex;
     flex: 1;
+    flex-direction: column;
 }
 
 .player {
@@ -36,8 +47,8 @@
 }
 
 .button {
-    width: 8vw;
-    height: 8vw;
+    min-width: 8vw;
+    min-height: 8vw;
     flex: 1;
     
 }
@@ -50,7 +61,11 @@
 h1.gameover_tag {
     align-self: center;
     justify-self: center;
-    font-size: 6em;
+    font-size: 3em;
     flex: 1;
     display: none;
+}
+
+h3 {
+    margin-left: 10px;
 }

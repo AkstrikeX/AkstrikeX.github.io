@@ -38,9 +38,14 @@ async function startGame() {
     let pontuacao = 0
     while(!gameOver){
         await sleep(200)
-        bullet.create()
-        pontuacao++
-        document.getElementById("pontuacao").innerHTML = "Score:" + pontuacao
+        if(document.querySelectorAll(".bullet").length > 20) {
+            
+        } else {
+            bullet.create()
+            pontuacao++
+            document.getElementById("pontuacao").innerHTML = "Score: " + pontuacao
+        }
+        
     }
 
     bullets = document.querySelectorAll('.bullet')

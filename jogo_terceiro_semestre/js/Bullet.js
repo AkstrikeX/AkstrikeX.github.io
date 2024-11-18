@@ -94,8 +94,12 @@ class Bullet {
         let player_width = parseInt(getComputedStyle(player).width)                
         let player_height = parseInt(getComputedStyle(player).height) 
 
+        let rect_bala = bala.getBoundingClientRect();
+        let rect_player = player.getBoundingClientRect();
 
-        if (((left >= player_left && left <= player_left+player_width) && (top >= player_top && top <= player_top + player_height)) || ( (right >= player_left && right <= player_left+player_width) && (bottom <= player_top && bottom >= player_top + player_height))){
+        let isColliding = !(rect_bala.right < rect_player.left || rect_bala.left > rect_player.right || rect_bala.bottom < rect_player.top || rect_bala.top > rect_player.bottom)
+
+        if (isColliding){
             return gameOver = true
         }
     }
