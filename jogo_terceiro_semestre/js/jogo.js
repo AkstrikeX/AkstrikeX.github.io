@@ -33,9 +33,14 @@ document.addEventListener("keyup",()=>{
     player.acceleration = 10
 });
 
+var audio = document.getElementById("myAudio")
+
 async function startGame() {
     player.setPosition()
     let pontuacao = 0
+    
+    audio.volume = 0.3
+    audio.play()
     while(!gameOver){
         await sleep(200)
         if(document.querySelectorAll(".bullet").length > 20) {
@@ -47,6 +52,8 @@ async function startGame() {
         }
         
     }
+    audio.pause()
+    audio.currentTime = 0
 
     bullets = document.querySelectorAll('.bullet')
     bullets.forEach(element => {
