@@ -1,5 +1,5 @@
 class Player {
-    acceleration = 10
+    acceleration = 3
     speed = 9
     screen = document.getElementById("tela")
 
@@ -25,11 +25,7 @@ class Player {
         let height = parseInt(getComputedStyle(player).height)
         let width = parseInt(getComputedStyle(player).width)
 
-        if (this.acceleration > 0) {
-            this.speed = 12
-        } else {
-            this.speed = 9
-        }
+        this.canAccelerate()
 
         let screen_height = parseInt(getComputedStyle(this.screen).height)
         let screen_width = parseInt(getComputedStyle(this.screen).width)
@@ -60,7 +56,17 @@ class Player {
                 player.style.left = `${left + this.speed}px`
             }
         }
-        this.acceleration--
+    }
+
+    async canAccelerate(){
+        if (this.acceleration > 0) {
+            this.speed = 12
+            this.acceleration--
+        } else {
+            this.speed = 9
+            await sleep(3000)
+            this.acceleration = 10
+        }
     }
 
     setPosition() {
